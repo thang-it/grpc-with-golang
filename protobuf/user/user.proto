@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package user;
+
+import "common/common.proto";
+
+option go_package="api_protobuf/user";
+
+message Id {
+  string Id = 1;
+}
+
+message User {
+  string name = 1;
+  string pass = 2;
+  common.Date date = 3;
+}

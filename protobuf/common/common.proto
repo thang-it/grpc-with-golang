@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package common;
+
+option go_package="api_protobuf/common";
+
+message Date {
+  Date createdAt = 1;
+  Date updatedAt = 2;
+  Date deletedAt = 3;
+}

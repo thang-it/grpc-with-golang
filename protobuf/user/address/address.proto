@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package user.address;
+
+option go_package="api_protobuf/user/address";
+
+message Id {
+  string Id = 1;
+}
+
+message Address {
+  string address = 1;
+  string city = 2;
+}
